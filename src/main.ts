@@ -1,5 +1,5 @@
 import "./style.css";
-import typescriptLogo from "./typescript.svg";
+// import typescriptLogo from "./typescript.svg";
 import { initTheme, toggle } from "./theme";
 
 initTheme();
