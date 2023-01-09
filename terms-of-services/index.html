@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Services - YTloader</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-white dark:bg-neutral-800 text-slate-900 dark:text-neutral-50 relative transition-colors min-h-screen"
+  >
+    <div
+      class="absolute -z-10 inset-0 bg-gradient-to-tl from-purple-600 via-rose-600 to-[#FF0000] blur opacity-5"
+    ></div>
+    <!-- Intro -->
+    <header class="w-full relative">
+      <div
+        class="flex items-center justify-between px-1 py-3 max-w-7xl mx-auto"
+      >
+        <a
+          href="/"
+          class="cursor-pointer hover:opacity-80 flex items-center space-x-3 transition-opacity"
+        >
+          <img
+            src="/vite.svg"
+            alt="downloder"
+            class="w-8 h-8 md:w-10 md:h-10 object-cover object-center overflow-hidden rounded-full"
+          />
+          <h1 class="font-medium md:font-extrabold md:text-lg uppercase">
+            YTloader.
+          </h1>
+        </a>
+
+        <div class="flex items-center space-x-6">
+          <nav
+            class="font-medium text-sm absolute top-full inset-x-0 z-30 min-h-full bg-gray-50 p-4 hidden flex-col gap-3 lg:bg-transparent lg:static lg:flex lg:items-center lg:flex-row"
+            id="nav"
+          >
+            <a href="" class="hover:text-red-500 active:text-red-500"
+              >Convert to Mp3</a
+            >
+            <a href="" class="hover:text-red-500 active:text-red-500"
+              >Instagram</a
+            >
+            <a href="" class="hover:text-red-500 active:text-red-500">TikTok</a>
+          </nav>
+
+          <div
+            class="md:hidden grid place-content-center place-items-center px-2 h-9 bg-red-500/20 rounded hover:bg-red-500/10 border border-red-600"
+            id="toggleNav"
+          >
+            <!-- Open svg -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 stroke-2 text-red-500 cursor-pointer"
+              id="open"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+            <!-- Close svg -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-8 h-8 stroke-2 text-red-500 cursor-pointer hidden"
+              id="close"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="flex items-center gap-3">
+            <a
+              class="hidden md:grid rounded text-blue-400 bg-blue-400/20 border border-blue-500 font-semibold text-sm leading-5 h-9 place-items-center px-3"
+              href="https://twitter.com/trickthevick"
+              data-show-count="true"
+            >
+              Follow @trickthevick
+            </a>
+
+            <button
+              role="button"
+              class="px-2 h-9 bg-red-500/20 rounded hover:bg-red-500/10 border border-red-600"
+              id="themeSwitch"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 fill-white stroke-red-500 stroke-[1.4]"
+              >
+                <g id="Light">
+                  <g>
+                    <path
+                      d="M12,18.09A6.09,6.09,0,1,1,18.09,12,6.1,6.1,0,0,1,12,18.09ZM12,6.91A5.09,5.09,0,1,0,17.09,12,5.1,5.1,0,0,0,12,6.91Z"
+                    />
+                    <path
+                      d="M11.5,2.568v1.6a.5.5,0,1,0,1,0v-1.6a.5.5,0,1,0-1,0Z"
+                    />
+                    <path
+                      d="M12.5,21.432v-1.6a.5.5,0,0,0-1,0v1.6a.5.5,0,1,0,1,0Z"
+                    />
+                    <path
+                      d="M21.432,11.5h-1.6a.5.5,0,0,0,0,1h1.6a.5.5,0,1,0,0-1Z"
+                    />
+                    <path
+                      d="M2.568,12.5h1.6a.5.5,0,1,0,0-1h-1.6a.5.5,0,1,0,0,1Z"
+                    />
+                    <path
+                      d="M18.316,4.977l-.992.992-.141.141a.514.514,0,0,0-.146.353.508.508,0,0,0,.146.354.5.5,0,0,0,.354.146.515.515,0,0,0,.353-.146l.992-.992.141-.141a.515.515,0,0,0,.147-.354.508.508,0,0,0-.147-.353.5.5,0,0,0-.353-.147.522.522,0,0,0-.354.147Z"
+                    />
+                    <path
+                      d="M5.684,19.023l.992-.992.141-.141a.514.514,0,0,0,.146-.353.508.508,0,0,0-.146-.354.5.5,0,0,0-.354-.146.515.515,0,0,0-.353.146l-.992.992-.141.141a.515.515,0,0,0-.147.354.508.508,0,0,0,.147.353.5.5,0,0,0,.353.147.522.522,0,0,0,.354-.147Z"
+                    />
+                    <path
+                      d="M19.023,18.316l-.992-.992-.141-.141a.514.514,0,0,0-.353-.146.508.508,0,0,0-.354.146.5.5,0,0,0-.146.354.515.515,0,0,0,.146.353l.992.992.141.141a.515.515,0,0,0,.354.147.508.508,0,0,0,.353-.147.5.5,0,0,0,.147-.353.522.522,0,0,0-.147-.354Z"
+                    />
+                    <path
+                      d="M4.977,5.684l.992.992.141.141a.514.514,0,0,0,.353.146.508.508,0,0,0,.354-.146.5.5,0,0,0,.146-.354.515.515,0,0,0-.146-.353l-.992-.992-.141-.141A.515.515,0,0,0,5.33,4.83a.508.508,0,0,0-.353.147.5.5,0,0,0-.147.353.522.522,0,0,0,.147.354Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <ul
+              class="absolute z-50 top-full right-0 rounded-lg shadow-lg overflow-hidden w-32 py-1 text-sm font-semibold bg-neutral-800 text-white dark:bg-white dark:text-slate-900 hidden"
+              aria-orientation="vertical"
+              role="listbox"
+              id="themeOptions"
+            >
+              <li
+                class="py-1 px-2 flex items-center cursor-pointer hover:bg-blue-500/20 transition-colors"
+                id="light"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+
+                Light
+              </li>
+              <li
+                class="py-1 px-2 flex items-center cursor-pointer hover:bg-blue-500/20 transition-colors"
+                id="dark"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+
+                Dark
+              </li>
+              <li
+                class="py-1 px-2 flex items-center cursor-pointer hover:bg-blue-500/20 transition-colors"
+                id="system"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 mr-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                  />
+                </svg>
+
+                System
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="max-w-6xl px-1 py-3 mx-auto my-3 text-slate-900 dark:text-gray-100"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-semibold md:font-bold text-center capitalize text-slate-900 dark:text-gray-100"
+      >
+        Terms of Service
+      </h2>
+
+      <p class="mb-3">
+        Please review these terms and conditions of use carefully before using
+        our website and services, including, without limitation, the following:
+      </p>
+
+      <p>
+        YTloader website, the YTloader application, and the YTloader browser
+        extension
+        <br />
+        This document states the terms and conditions (“Terms”) upon which
+        YTloader (“we” or “us”) will provide service to you on its website,
+        applications and related services (collectively, the “Service”). As used
+        in this document, the terms “you” or “your” refers to you, any entity
+        you represent, your or its representatives, successors, assigns and
+        affiliates, and any of your or their devices.
+      </p>
+
+      <p class="mb-3 font-bold">
+        By visiting, accessing, using, downloading, copying, installing and/or
+        joining (collectively “using”) the Service, you express your
+        understanding and acceptance of these Terms. If you do not agree to be
+        bound by these Terms, cease using the Service and delete any copy of the
+        Service which you may have.
+      </p>
+
+      <p class="mb-3 font-bold">
+        These terms also include certain liability limitations and legal
+        disclaimers that limit our liabilities. In other words, your use of the
+        Service is at your own risk and we do not assume any liability, or make
+        any warranties of any kind, express or implied, with respect to the
+        Service.
+      </p>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">a. terms of use</h3>
+      <ul>
+        <li>
+          Use of the Service is not permitted where prohibited by law. Without
+          limiting the foregoing, you represent and warrant that you are not
+          located in a country that is subject to international or applicable
+          embargo, or a country that has been designated by the international or
+          applicable law as a “terrorist supporting” country and that you are
+          not listed on any applicable list of prohibited or restricted parties.
+        </li>
+        <li>
+          You must be at least eighteen (18) years of age to use the Service. If
+          you are under eighteen (18) years old, you are not permitted to use
+          the Service and you must immediately cease using the Service,
+          regardless of parental authorization.
+        </li>
+        <li>
+          You may be required, from time to time and in our discretion, to
+          create an account with us (an “Account”) to use parts of the Service
+          to its fullest extent. In such cases: You represent and warrant that
+          all information that you provide to us in creating your Account is
+          complete and accurate. You shall update such information when it
+          changes or when we request. You acknowledge that we may also access,
+          with your permission, personally identifiable information through a
+          third-party or other means based on the permissions you provide. You
+          shall not use another person or entity’s Account without authorization
+          or access the accounts of any other person on any other systems. You
+          shall be solely responsible for maintaining the confidentiality of and
+          restricted access to your Account. You shall be solely responsible for
+          all activities that occur under your Account. You shall notify us
+          immediately of any breach of security or unauthorized use of your
+          Account. Pursuant to the terms herein, we shall not be liable for any
+          losses resulting from any unauthorized use of your Account and, in
+          addition to the further indemnification herein, you hereby indemnify
+          us and hold us harmless for any such unauthorized use. You acknowledge
+          and understand that anyone who gains access to your Account will gain
+          access to your all of your data on your Account, including any private
+          content.
+        </li>
+        <li>
+          The consideration for your knowing acceptance of these Terms is that
+          we are providing you the Grant of Use to use the Service pursuant to
+          Section 2 hereof. You acknowledge and agree that this consideration is
+          adequate and that you have received the same upon use of the Service.
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">b. grand of use</h3>
+      <ul>
+        <li>
+          We grant you a non-exclusive, non-transferable, and limited right to
+          access, non-publicly display, and use the Service, including all
+          content available therein (the “Content”) on your computer or mobile
+          device consistent with these Terms and subject to the restrictions
+          (technical and otherwise) of the Service. You may only access and use
+          the Service for your personal and noncommercial use.
+        </li>
+        <li>
+          This grant is terminable by us at will for any reason and at our sole
+          discretion, with or without prior notice. Upon termination, we may,
+          but shall not be obligated to: (i) delete or deactivate your Account
+          or use of the Service, (ii) block your e-mail and/or IP addresses or
+          otherwise terminate your use of and ability to use the Service, and/or
+          (iii) remove and/or delete any of your User Submissions (defined
+          below). You agree not to use or attempt to use the Service after said
+          termination. Upon termination, the grant of your right to use the
+          Service shall terminate, but all other portions of these Terms shall
+          survive. You acknowledge that we are not responsible to you or any
+          third party for the termination of your grant of use.
+        </li>
+        <li>
+          In addition to the terms set forth herein, your use of the Service
+          shall be limited by the rules, features and technical restrictions of
+          the Service, which may change from time to time in our sole
+          discretion. You shall not attempt to use the Service in any manner in
+          which the Service is not intended or permitted to be used.
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">
+        c. intellectual property
+      </h3>
+
+      <ul>
+        <li>
+          The Content, excluding User Submissions and Third Party Content
+          (defined below), but including other text, graphical images,
+          photographs, music, video, software, scripts, source code, and
+          trademarks, service marks and logos contained therein (collectively
+          “Proprietary Materials”), are owned by and/or licensed to us. All
+          Proprietary Materials are subject to copyright, trademark, and/or
+          other rights under the laws of applicable jurisdictions, including
+          domestic laws, foreign laws, and international conventions. We reserve
+          all our rights over our Proprietary Materials.
+
+          <ul>
+            <li>
+              <blockquote class="italic font-thin text-red-500">
+                Except as otherwise explicitly permitted, you agree not to copy,
+                modify, publish, transmit, distribute, participate in the
+                transfer or sale of, create derivative works of, or in any other
+                way exploit, in whole or in part, any Proprietary Materials or
+                Third Party Content.
+              </blockquote>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">d. user Submissions</h3>
+      <p class="mb-3">
+        You are entirely responsible for any and all materials you download,
+        upload, submit, transmit, create, modify or otherwise make available in
+        or via the Service, including any sound files, video files, or
+        photographs that you create, modify, transmit or download through the
+        Service (collectively, “User Submissions”). User Submissions cannot
+        always be withdrawn. You acknowledge that any disclosure of personal
+        information in User Submissions may make you personally identifiable and
+        that we do not guarantee any confidentiality with respect to User
+        Submissions.
+      </p>
+
+      <p class="mb-3">
+        You shall be solely responsible for any and all of your own User
+        Submissions and any and all consequences of downloading, uploading,
+        submitting, modifying, transmitting, creating or otherwise making
+        available the User Submissions. For any and all of your User
+        Submissions, you affirm, represent and warrant that:
+      </p>
+      <ul class="mb-4">
+        <li>
+          You own or have the necessary licenses, permissions, rights, or
+          consents to use and authorize us to use all trademarks, copyrights,
+          trade secrets or other proprietary rights in and to User Submissions
+          for any and all uses contemplated by the Service and these Terms; and
+        </li>
+        <li>
+          You have written consent, release, and/or permission from each and
+          every identifiable individual in the User Submission to use the name
+          and/or likeness of each and every such identifiable individual to
+          enable use of the User Submission for any and all uses contemplated by
+          the Services and these Terms.
+        </li>
+      </ul>
+      <p class="mb-3">
+        You further agree that you shall not download, upload, submit, create,
+        transmit, modify, or otherwise make available material that:
+      </p>
+      <ul class="mb-4">
+        <li>
+          Is copyrighted, protected by trade secret or trademark laws, or
+          otherwise subject to third party proprietary rights, including privacy
+          and publicity rights, unless you are the owner of such rights, have
+          explicit permission from the rightful owner to submit the material and
+          to grant us all of the license rights granted herein, or have other
+          legal and effective basis to the material and to grant us all of the
+          license rights granted herein;
+        </li>
+        <li>
+          Is obscene, vulgar, illegal, unlawful, defamatory, fraudulent,
+          libelous, harmful, harassing, abusive, threatening, invasive of
+          privacy or publicity rights, hateful, racially or ethnically
+          offensive, inflammatory, or otherwise inappropriate as decided by us
+          in our sole discretion;
+        </li>
+        <li>
+          Depicts illegal activities, promotes or depicts physical harm or
+          injury against any group or individual, or promotes or depicts any act
+          of cruelty to animals;
+        </li>
+        <li>
+          Impersonates any person or entity or otherwise misrepresents you in
+          any way, including creating a false identity;
+        </li>
+        <li>
+          Would constitute, encourage or provide instructions for a criminal
+          offense, a violation of the rights of any party, or that would
+          otherwise create liability or violate any local, state, national or
+          international law; or
+        </li>
+        <li>
+          Is unsolicited or unauthorized advertising, promotion, “spam” or any
+          other form of solicitation.
+
+          <ul class="my-2">
+            <li class="opacity-60">
+              We claim no ownership or control over User Submissions or Third
+              Party Content. You or a third-party licensor, as appropriate,
+              retain all copyrights to User Submissions and you are responsible
+              for protecting those rights as appropriate. You irrevocably grant
+              us a world-wide, non-exclusive, royalty-free, perpetual,
+              non-cancelable, sub-licenseable license to reproduce, publicly
+              perform, publicly display, distribute, adapt, modify, publish,
+              translate, create derivative works of and otherwise exploit User
+              Submissions for any purpose, including without limitation any
+              purpose contemplated by the Service and these Terms. You also
+              irrevocably waive and cause to be waived against us and any of our
+              users any claims and assertions of moral rights or attribution
+              with respect to User Submissions.
+            </li>
+            <li class="opacity-60">
+              You represent and warrant that you have all the rights, power and
+              authority necessary to grant the rights granted herein to User
+              Submissions. Specifically, you represent and warrant that you have
+              the right to download, upload, modify, access, transmit, create or
+              otherwise make available the User Submissions on the Service, and
+              that downloading or uploading the User Submissions will not
+              infringe upon any other party’s rights or your contractual
+              obligations to other parties.
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          You acknowledge that we may at our sole discretion refuse to publish,
+          remove, or block access to any User Submission for any reason, or for
+          no reason at all, with or without notice.
+
+          <ul class="my-2">
+            <li>
+              Without limiting the other indemnification provisions herein, you
+              agree to defend us against any claim, demand, suit or proceeding
+              made or brought against us by a third-party alleging that your
+              User Submissions or your use of the Service in violation of these
+              Terms infringes or misappropriates the intellectual property
+              rights of any third-party or violates applicable law and you shall
+              indemnify us for any and all damages against us and for reasonable
+              attorney’s fees and other costs incurred by us in connection with
+              any such claim, demand, suit or proceeding.
+            </li>
+            <li>
+              If you make any suggestions to us about improving the Service or
+              adding new features to the Service, you are assigning to us the
+              right to use your suggestions without any compensation to you
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">
+        e. content on the service
+      </h3>
+      <ul>
+        <li>
+          You understand and acknowledge that, when using the Service, you will
+          be exposed to content from a variety of sources including content made
+          available on or through the Service by other users, services, parties
+          and through automated or other means (collectively, “Third Party
+          Content”) and that we do not control and are not responsible for any
+          Third Party Content. You understand and acknowledge that you may be
+          exposed to content that is inaccurate, offensive, indecent or
+          otherwise objectionable or may cause harm to your computer systems
+          and, without limiting the other limitation of liability provisions
+          herein, you agree to waive, and hereby do waive, any legal or
+          equitable rights or remedies you may have against us with respect
+          thereto.
+        </li>
+        <li>
+          We claim no ownership or control over Third Party Content. Third
+          parties retain all rights to their respective Third Party Content and
+          they are responsible for protecting their rights as appropriate.
+        </li>
+        <li>
+          You understand and acknowledge that we assume no responsibility
+          whatsoever for monitoring the Service for inappropriate content or
+          conduct. If at any time we choose, in our sole discretion, to monitor
+          such content, we assume no responsibility for such content, have no
+          obligation to modify or remove any such content (including User
+          Submissions and Third Party Content), and assume no responsibility for
+          the conduct of others submitting any such content (including User
+          Submissions and Third Party Content).
+        </li>
+        <li>
+          Without limiting the provisions below on limitations of liability and
+          disclaimers of warranties, all Content (including User Submissions and
+          Third Party Content) on the Service is provided to you “AS-IS” for
+          your information and personal use only and you shall not use, copy,
+          reproduce, distribute, transmit, broadcast, display, sell, license or
+          otherwise exploit for any other purpose whatsoever the Content without
+          the prior written consent of the respective owners/licensors of the
+          Content.
+        </li>
+        <li>
+          You acknowledge that we may at our sole discretion refuse to publish,
+          remove, or block access to any Content for any reason, or for no
+          reason at all, with or without notice.
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">f. User Conduct</h3>
+      <span class="italic text-sm max-w-4xl mx-auto px-4"
+        >You represent and warrant that all the information and content provided
+        by you to us is accurate and current and that you have all necessary
+        rights, power and authority to (i) agree to these Terms, (ii) provide
+        the User Submissions to us, and (iii) perform the acts required of you
+        under these Terms.</span
+      >
+      <ul>
+        <li>
+          You represent and warrant that all the information and content
+          provided by you to us is accurate and current and that you have all
+          necessary rights, power and authority to (i) agree to these Terms,
+          (ii) provide the User Submissions to us, and (iii) perform the acts
+          required of you under these Terms.
+        </li>
+        <li>
+          As a condition of your use of the Service:
+
+          <ul>
+            <li>
+              You agree not to use the Service for any unlawful purpose or in
+              any way that is prohibited by these Terms.
+            </li>
+            <li>
+              You agree to abide by all applicable local, state, national and
+              international laws and regulations
+            </li>
+            <li>
+              You agree not to use the Service in any way that exposes us to
+              criminal or civil liability.
+            </li>
+            <li>
+              You agree that you are solely responsible for all acts and
+              omissions that occur as a result of your use of the Service;
+            </li>
+            <li>
+              You agree that all your User Submissions belong to you and that
+              you have the right and authority to provide them to us and make
+              use of them on or through the Service;
+            </li>
+            <li>
+              You agree not to use any automated means, including robots,
+              crawlers or data mining tools, to download, monitor or use data or
+              Content from the Service;
+            </li>
+            <li>
+              You agree not to take any action that imposes, or may impose, in
+              our sole discretion, an unreasonable or disproportionately large
+              load on our technology infrastructure or otherwise make excessive
+              demands on it;
+            </li>
+            <li>
+              You agree not to “stalk” or otherwise harass anyone on or through
+              the Service.
+            </li>
+            <li>
+              You agree not to forge headers or otherwise manipulate identifiers
+              in order to disguise the origin of any information you transmit.
+            </li>
+            <li>
+              You agree not to disable, circumvent, or otherwise interfere with
+              security related features of the Service or features that prevent
+              or restrict use or copying of any content or which enforce
+              limitations on the use of the Service or the content therein.
+            </li>
+            <li>
+              You agree not to post, link to, or otherwise make available on the
+              Service any material that contains software viruses or any
+              computer code, file or program designed to interrupt, destroy,
+              limit or monitor the functionality of any computer software or
+              hardware or any telecommunications equipment.
+            </li>
+            <li>
+              You agree not to license, sublicense, sell, resell, transfer,
+              assign, distribute or otherwise in any way commercially exploit or
+              make available the Service or any Content to any third party.
+            </li>
+            <li>You agree not to “frame” or “mirror” the Service; and</li>
+            <li>
+              You agree not to reverse engineer any portion of the Service.
+
+              <ul class="my-2">
+                <li class="text-sm opacity-60">
+                  You may only use the Service consistent with these Terms and
+                  any and all agreements under which the Service is provided to
+                  you (including, for example, any app store agreement). You
+                  assume sole responsibility for obtaining any additional or
+                  related hardware or software required for use of the Service.
+                </li>
+                <li class="text-sm opacity-60">
+                  Except as described below, you are not permitted to decompile,
+                  disassemble, reverse compile, reverse assemble, reverse
+                  translate or otherwise reverse engineer the Service, use any
+                  similar means to discover the source code of the Service or to
+                  discover any trade secrets or other intellectual property in
+                  the Service.
+                </li>
+                <li class="opacity-60 text-sm">
+                  You acknowledge that from time to time the Service may
+                  automatically check for and install updates on your device.
+                  You agree and accept that the Service may make updates without
+                  your confirmation or consent. Any updates to the Service will
+                  be deemed part of the Service. However, we have no obligation
+                  to provide you with any updates to the Service (nor does any
+                  third-party).
+                </li>
+                <li class="opacity-60 text-sm">
+                  We reserve the right to take appropriate action against any
+                  user for any unauthorized use of the Service, including civil,
+                  criminal and injunctive redress and the termination of any
+                  user’s use of the Service. Any use of the Service and our
+                  computer systems not authorized by these Terms is a violation
+                  of these Terms and certain international, foreign, and
+                  domestic criminal and civil laws.
+                </li>
+                <li class="opacity-60 text-sm">
+                  In addition to termination of the grant of use of the Service,
+                  any violation of this Agreement, including the provisions of
+                  this Section 6, shall subject you to liquidated damages of ten
+                  thousand dollars ($10,000) for each violation. In the event
+                  that your violation results in legal action (whether against
+                  you or against us by any party) or physical or emotional harm
+                  to any party, you shall be subject to liquidated damages of
+                  One Hundred and Fifty Thousand Dollars ($150,000) for each
+                  violation. We may, in our discretion, assign any such damage
+                  claim or portion thereof to a third party that has been
+                  wronged by your conduct. These liquidated damages provisions
+                  are not a penalty, but instead an attempt by the Parties to
+                  reasonably ascertain the amount of actual damage that could
+                  occur from such a violation. You acknowledge and agree that
+                  the amount of these liquidated damages is a minimum and that
+                  if actual damages are greater you shall be liable for the
+                  greater amount. If a court of competent jurisdiction finds
+                  that these liquidated damages are unenforceable to any extent,
+                  then the liquidated damages shall be lowered only by the
+                  extent necessary for them to be enforceable.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">
+        g. Services on the service
+      </h3>
+
+      <ul>
+        <li>
+          You acknowledge that the Service is a general-purpose tool.
+          Specifically, but without limitation, the Service allows you to access
+          media on multiple other platforms and to, among other things, download
+          and/or convert that media.
+          <span class="font-bold"
+            >The Service may only be used in accordance with law</span
+          >. We do not encourage, condone, induce, or allow any use of the
+          Service that may be in violation of any law. We explicitly prohibit
+          the use of the Service to download any content in violation of
+          copyright laws.
+        </li>
+        <li>
+          To the extent that we may store any User Submissions whatsoever, we do
+          not intend to store any User Submissions for anything longer than a
+          transitory period of time to give users chance to download their
+          content.
+        </li>
+      </ul>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">h. fees</h3>
+
+      <p class="mb-3">
+        You acknowledge that we reserve the right to charge for any or all of
+        our services and to change our fees from time to time in our sole
+        discretion. If at any time we terminate your rights to use the Service
+        because of a breach of these Terms, you shall not be entitled to a
+        refund of any portion of your fees. In all other respects, such fees
+        shall be governed by additional rules, terms, conditions, or agreements
+        posted on the Service and/or imposed by any sales agent or payment
+        processing company, as may be amended from time to time.
+      </p>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">i. privacy policy</h3>
+
+      <p class="mb-3">
+        We retain a separate Privacy Policy and your assent to these Terms also
+        signifies that you have read and understand the Privacy Policy. We
+        reserve the right to amend the Privacy Policy at any time by posting
+        such amendments to the Service or our website. No other notification may
+        be made to you about any amendments. Your continued use of the App
+        following such amendments will be deemed your acknowledgement of the
+        Privacy Policy and that you have read and understand it.
+      </p>
+      <p class="mb-3">
+        You acknowledge that we may collect and use technical data and related
+        information, including but not limited to technical information about
+        your device, system and application software, and peripherals, that is
+        gathered periodically to facilitate the provision of updates to the
+        Service.
+      </p>
+      <p class="mb-3">
+        You understand, acknowledge and agree that we may access, preserve and
+        disclose your information if required to do so by law or in a good faith
+        belief that such access, preservation or disclosure is reasonably
+        desirable or necessary for us.
+      </p>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">
+        j. modification of these terms
+      </h3>
+
+      <p class="mb-3">
+        We reserve the right to amend these Terms at any time by posting such
+        amended Terms to the Service. No other notification may be made to you
+        about any amendments. YOU ACKNOWLEDGE THAT YOUR CONTINUED USE OF THE
+        SERVICE FOLLOWING SUCH AMENDMENTS WILL CONSTITUTE YOUR ACCEPTANCE OF
+        SUCH AMENDMENTS, REGARDLESS OF WHETHER YOU HAVE ACTUALLY READ THEM.
+      </p>
+
+      <h3 class="font-bold text-lg uppercase mt-4 mb-4">
+        k. Indemnification and Release
+      </h3>
+
+      <p class="mb-3">
+        You hereby agree to indemnify us and hold us harmless from any and all
+        damages and third-party claims and expenses, including attorney’s fees,
+        arising from your use of the Service and/or from your breach of these
+        Terms.
+      </p>
+      <p class="mb-3">
+        In the event that you have a dispute with one of more other users or any
+        third parties, you hereby release us, our officers, employees, agents
+        and successors-in-right from claims, demands and damages (actual and
+        consequential) of every kind or nature, known and unknown, suspected and
+        unsuspected, disclosed and undisclosed, arising out of or in any way
+        related to such disputes and/or the Service.
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-neutral-900 text-white dark:bg-neutral-900/60 py-4 w-full mt-9 text-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col items-center gap-3 md:flex-row md:items-start justify-between px-2 pb-4"
+      >
+        <div>
+          <h4 class="font-bold text-lg uppercase mb-1">YTloader</h4>
+        </div>
+
+        <!-- Socials -->
+        <div class="flex flex-wrap items-center gap-3">
+          <!-- Youtube Channel -->
+          <a
+            href=""
+            target="_blank"
+            class="hover:text-red-500 active:text-red-500 flex items-center space-x-2"
+          >
+            <svg
+              viewBox="0 0 256 180"
+              class="h-7 w-7 fill-red-600 hover:fill-white"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              preserveAspectRatio="xMidYMid"
+            >
+              <g>
+                <path
+                  d="M250.346231,28.0746923 C247.358133,17.0320558 238.732098,8.40602109 227.689461,5.41792308 C207.823743,0 127.868333,0 127.868333,0 C127.868333,0 47.9129229,0.164179487 28.0472049,5.58210256 C17.0045684,8.57020058 8.37853373,17.1962353 5.39043571,28.2388718 C-0.618533519,63.5374615 -2.94988224,117.322662 5.5546152,151.209308 C8.54271322,162.251944 17.1687479,170.877979 28.2113844,173.866077 C48.0771024,179.284 128.032513,179.284 128.032513,179.284 C128.032513,179.284 207.987923,179.284 227.853641,173.866077 C238.896277,170.877979 247.522312,162.251944 250.51041,151.209308 C256.847738,115.861464 258.801474,62.1091 250.346231,28.0746923 Z"
+                  fill="#FF0000"
+                ></path>
+                <polygon
+                  fill="#FFFFFF"
+                  points="102.420513 128.06 168.749025 89.642 102.420513 51.224"
+                ></polygon>
+              </g>
+            </svg>
+            <span
+              class="hidden lg:inline-block text-red-600 hover:underline hover:text-white"
+              >trickthevick</span
+            >
+          </a>
+          <!-- Twitter -->
+          <a
+            href=""
+            target="_blank"
+            class="hover:text-blue-400 active:text-blue-400 flex items-center space-x-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="h-7 w-7 fill-blue-400 hover:fill-white"
+            >
+              <g id="Twitter">
+                <path
+                  d="M19.913,5.322a1.034,1.034,0,0,1,.837,1.629L19.708,8.432c-.064,5.086-1.765,8.539-5.056,10.264A10.917,10.917,0,0,1,9.6,19.835a12.233,12.233,0,0,1-6.2-1.524.76.76,0,0,1-.317-.8.768.768,0,0,1,.63-.6,20.6,20.6,0,0,0,3.745-.886C2,13.5,3.19,7.824,3.71,6.081a1.028,1.028,0,0,1,1.729-.422,9.931,9.931,0,0,0,5.995,2.95A4.188,4.188,0,0,1,12.725,5.3a4.125,4.125,0,0,1,5.7.02ZM4.521,17.794c1.862.872,6.226,1.819,9.667.016,2.955-1.549,4.476-4.732,4.521-9.461a.771.771,0,0,1,.142-.436l1.081-1.538-.041-.053c-.518-.007-1.029-.014-1.55,0a.835.835,0,0,1-.547-.221,3.13,3.13,0,0,0-4.383-.072,3.174,3.174,0,0,0-.935,2.87.646.646,0,0,1-.154.545.591.591,0,0,1-.516.205A10.924,10.924,0,0,1,4.722,6.354c-.67,2.078-1.52,7.094,3.869,9.065a.632.632,0,0,1,.416.538.625.625,0,0,1-.3.6A13.178,13.178,0,0,1,4.521,17.794ZM11.875,8.65h0Zm7.793-.161,0,0Z"
+                />
+              </g>
+            </svg>
+
+            <span
+              class="hidden lg:inline-block text-blue-400 hover:underline hover:text-white"
+              >trickthevick</span
+            >
+          </a>
+          <!-- Buu me Coffee -->
+          <a
+            href=""
+            target="_blank"
+            class="hover:text-yellow-400 active:text-yellow-400 flex items-center space-x-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="h-7 w-7 fill-yellow-400 hover:fill-white"
+            >
+              <g id="Coffee_Cup" data-name="Coffee Cup">
+                <path
+                  d="M18.79,5.67a1.5,1.5,0,0,0-1.16-1.46l-.38-1.38a1.081,1.081,0,0,0-1.05-.76H7.79a1.06,1.06,0,0,0-1.04.76L6.37,4.21A1.537,1.537,0,0,0,5.21,5.76,1.476,1.476,0,0,0,6.27,7.18l.1,2.77a.75.75,0,0,0-.42.22.768.768,0,0,0-.21.56l.24,5.76a.759.759,0,0,0,.65.72l.08,2.22a2.579,2.579,0,0,0,2.59,2.5h5.39a2.581,2.581,0,0,0,2.6-2.5l.08-2.22a.76.76,0,0,0,.64-.72l.24-5.76a.768.768,0,0,0-.21-.56.72.72,0,0,0-.41-.22l.1-2.77A1.534,1.534,0,0,0,18.79,5.67Zm-11-2.6,8.49.03.3,1.07H7.44Zm8.5,16.33a1.578,1.578,0,0,1-1.6,1.53H9.3A1.575,1.575,0,0,1,7.71,19.4l-.08-2.18h8.74ZM9.9,13.58a2.1,2.1,0,1,1,2.1,2.1A2.1,2.1,0,0,1,9.9,13.58Zm6.73-3.65H7.37l-.1-2.67h9.45Zm.66-3.67H6.71a.522.522,0,0,1-.5-.59.5.5,0,0,1,.5-.5H17.29a.528.528,0,0,1,.5.59A.5.5,0,0,1,17.29,6.26Z"
+                />
+              </g>
+            </svg>
+
+            <span
+              class="hidden lg:inline-block text-yellow-400 hover:underline hover:text-white"
+              >buymecoffee</span
+            >
+          </a>
+        </div>
+        <!-- Terms and Cons. -->
+        <div class="flex gap-3 text-sm font-medium capitalize">
+          <a
+            href="/privacy-policy/"
+            class="hover:text-red-500 active:text-red-500"
+            >privacy</a
+          >
+          <a
+            href="/terms-of-services/"
+            class="hover:text-red-500 active:text-red-500"
+            >T&Cs</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

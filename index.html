@@ -33,13 +33,13 @@
             class="w-8 h-8 md:w-10 md:h-10 object-cover object-center overflow-hidden rounded-full"
           />
           <h1 class="font-medium md:font-extrabold md:text-lg uppercase">
-            MT Downloader.
+            YTLoader.
           </h1>
         </a>
 
         <div class="flex items-center space-x-6">
           <nav
-            class="font-medium text-sm absolute top-full inset-x-0 z-30 min-h-full bg-gray-50 dark:bg-neutral-800 p-4 hidden flex-col gap-3 lg:bg-transparent lg:static lg:flex lg:items-center lg:flex-row"
+            class="font-medium text-sm absolute top-full inset-x-0 z-30 min-h-full bg-gray-50 p-4 hidden flex-col gap-3 lg:bg-transparent lg:static lg:flex lg:items-center lg:flex-row"
             id="nav"
           >
             <a href="" class="hover:text-red-500 active:text-red-500"
@@ -52,7 +52,7 @@
           </nav>
 
           <div
-            class="md:hidden grid place-content-center place-items-center"
+            class="md:hidden grid place-content-center place-items-center px-2 h-9 bg-red-500/20 rounded hover:bg-red-500/10 border border-red-600"
             id="toggleNav"
           >
             <!-- Open svg -->
@@ -88,15 +88,16 @@
           </div>
           <div class="flex items-center gap-3">
             <a
-              href="twitter"
-              class="hidden md:grid rounded text-red-400 bg-red-400/20 font-semibold text-sm leading-5 h-9 place-items-center px-3"
+              class="hidden md:grid rounded text-blue-400 bg-blue-400/20 border border-blue-500 font-semibold text-sm leading-5 h-9 place-items-center px-3"
+              href="https://twitter.com/trickthevick"
+              data-show-count="true"
             >
-              Share on Twitter
+              Follow @trickthevick
             </a>
 
             <button
               role="button"
-              class="px-2 h-9 bg-red-500/20 rounded hover:bg-red-500/10"
+              class="px-2 h-9 bg-red-500/20 rounded hover:bg-red-500/10 border border-red-600"
               id="themeSwitch"
             >
               <svg
@@ -281,6 +282,30 @@
       </div>
     </section>
 
+    <!-- Caption -->
+    <section
+      class="max-w-6xl px-4 py-6 my-4 mx-auto bg-white dark:bg-gray-50 text-slate-900 rounded shadow-md"
+    >
+      <p class="font-medium text-lg text-center mb-4">
+        Welcome to YTLoader, the ultimate platform for downloading and
+        converting your favorite media from YouTube, Instagram, and TikTok. With
+        our user-friendly interface and powerful tool, you can easily access and
+        save content for offline viewing anytime, anywhere.
+      </p>
+
+      <p class="font-medium text-lg text-center">
+        Whether you want to download a single video or a whole playlist,
+        YTLoader has you covered. Simply enter the link to the video or playlist
+        you want to download, and our platform will handle the rest. You can
+        even choose the format and quality of the downloaded content, ensuring
+        that you get the best experience possible. Plus, with our video
+        conversion feature, you can easily convert your downloaded media into a
+        variety of different formats, making it even easier to watch on your
+        preferred device. So why wait? Start downloading and converting your
+        favorite media today with YTLoader!
+      </p>
+    </section>
+
     <!-- Supported platform -->
     <section class="max-w-7xl mx-auto my-5 py-5">
       <h2 class="font-bold text-2xl md:text-3xl capitalize text-center mb-3">
@@ -288,9 +313,21 @@
       </h2>
 
       <div class="flex items-center justify-center gap-3">
-        <div class="capitalize">facebook</div>
-        <div class="capitalize">TikTok</div>
-        <div class="capitalize">instagram</div>
+        <span
+          class="capitalize text-blue-500 py-2 px-3 min-w-[90px] text-center font-bold border border-blue-500 rounded bg-blue-500/20 mx-2"
+        >
+          facebook
+        </span>
+        <span
+          class="capitalize text-blue-400 py-2 px-3 min-w-[90px] text-center font-bold border border-blue-500 rounded bg-blue-400/20 mx-2"
+        >
+          TikTok
+        </span>
+        <span
+          class="capitalize text-rose-500 py-2 px-3 min-w-[90px] text-center font-bold border border-rose-600 rounded bg-rose-500/20 mx-2"
+        >
+          instagram
+        </span>
       </div>
     </section>
 
@@ -353,10 +390,10 @@
     </section>
 
     <!-- Other tools -->
-    <section class="max-w-7xl mx-auto my-5 py-5"></section>
+    <!-- <section class="max-w-7xl mx-auto my-5 py-5"></section> -->
 
     <!-- Frequently asked questions -->
-    <section class="max-w-7xl mx-auto my-5 py-5">
+    <!-- <section class="max-w-7xl mx-auto my-5 py-5">
       <h3 class="text-center font-bold text-2xl md:text-3xl mb-3">
         Frequently Asked Questions
       </h3>
@@ -389,7 +426,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer
@@ -399,7 +436,7 @@
         class="max-w-7xl mx-auto flex flex-col items-center gap-3 md:flex-row md:items-start justify-between px-2 pb-4"
       >
         <div>
-          <h4 class="font-bold text-lg uppercase mb-1">md downloder</h4>
+          <h4 class="font-bold text-lg uppercase mb-1">YTLoader</h4>
         </div>
 
         <!-- Socials -->
@@ -484,12 +521,12 @@
         <!-- Terms and Cons. -->
         <div class="flex gap-3 text-sm font-medium capitalize">
           <a
-            href="/privacy-policy.html"
+            href="/privacy-policy/"
             class="hover:text-red-500 active:text-red-500"
             >privacy</a
           >
           <a
-            href="/terms-of-service.html"
+            href="/terms-of-services/"
             class="hover:text-red-500 active:text-red-500"
             >T&Cs</a
           >
