@@ -13,8 +13,8 @@ accordions.forEach((accordion) => {
 
 const ytForm = document.getElementById("ytForm");
 let responseDom = document.getElementById("responseDom");
-const submitButton = document.getElementById("submit-btn");
-const dlOptions = document.getElementById("dlOptions");
+// const submitButton = document.getElementById("submit-btn");
+// const dlOptions = document.getElementById("dlOptions");
 let loading = document.getElementById("loading");
 let notLoading = document.getElementById("not-loading");
 
